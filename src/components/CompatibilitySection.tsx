@@ -119,7 +119,7 @@ const CompatibilitySection = () => {
                   <img 
                     src="/logos/systems/Windows_Mac.png" 
                     alt="Windows e Mac"
-                    className="w-12 h-12 md:w-16 md:h-16 object-contain mb-1 md:mb-2 group-hover:scale-110 transition-transform"
+                    className="w-16 h-16 md:w-20 md:h-20 object-contain mb-1 md:mb-2 group-hover:scale-110 transition-transform"
                     style={{
                       filter: 'drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 12px rgba(0, 162, 255, 0.3))'
                     }}
@@ -140,7 +140,7 @@ const CompatibilitySection = () => {
               
               // Layout especial para categoria equipment (3 cards: 1 no topo, 2 embaixo)
               if (currentCategory.id === 'equipment') {
-                radius = isMobile ? 130 : 170;
+                radius = isMobile ? 150 : 190; // Aumentado: 130→150, 170→190
                 if (index === 0) {
                   // Card do topo (Microfone Condensador)
                   x = 0;
@@ -157,7 +157,7 @@ const CompatibilitySection = () => {
               } else {
                 // Layout circular para outras categorias
                 const angle = index * 360 / currentCategory.items.length;
-                radius = isMobile ? 120 : 160;
+                radius = isMobile ? 140 : 180; // Aumentado: 120→140, 160→180
                 x = Math.cos((angle - 90) * Math.PI / 180) * radius;
                 y = Math.sin((angle - 90) * Math.PI / 180) * radius;
               }
@@ -165,9 +165,9 @@ const CompatibilitySection = () => {
               return (
                 <div key={`${activeCategory}-${index}`}>
                   <div className={`
-                    absolute w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32
+                    absolute w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36
                     glass-effect rounded-xl flex flex-col items-center justify-center 
-                    transition-all duration-500 z-10 group overflow-hidden
+                    transition-all duration-500 z-10 group overflow-visible
                     ${isAnimating ? 'scale-0 opacity-0' : 'scale-100 opacity-100 hover:scale-110 active:scale-95'}
                   `} style={{
                     left: `calc(50% + ${x}px)`,
@@ -182,17 +182,66 @@ const CompatibilitySection = () => {
                             <img 
                               src={item.logo} 
                               alt={item.name}
-                              className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 object-contain mb-1"
+                              className={`object-contain mb-1 ${
+                                // Controle por categoria completa - tamanhos aumentados
+                                currentCategory.id === 'systems' ? 'w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32' : // Windows/Mac maiores
+                                currentCategory.id === 'daws' ? 'w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16' : // DAWs maiores
+                                currentCategory.id === 'genres' ? 'w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28' : // Gêneros GIGANTES + vazamento
+                                currentCategory.id === 'equipment' ? 'w-20 h-20 md:w-28 md:h-28 lg:w-32 lg:h-32' : // Equipamentos GIGANTESCOS
+                                // Controle individual por item específico (exemplo)
+                                item.name === 'FL Studio' ? 'w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20' : // FL Studio específico maior
+                                item.name === 'Windows\n(10 e 11)' ? 'w-13 h-13 md:w-15 md:h-15 lg:w-19 lg:h-19' : // Windows específico
+                                // Padrão caso não encontre condição
+                                'w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14'
+                              }`}
                               style={{
                                 filter: 'drop-shadow(0 3px 6px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 12px rgba(0, 162, 255, 0.3))',
-                                transform: 'translateZ(6px)'
+                                // Efeito 3D: Gêneros vazando MUITO para cima (25-30%)
+                                transform: currentCategory.id === 'genres' 
+                                  ? 'translateZ(10px) translateY(-18px)' // MUITO mais para cima
+                                  : currentCategory.id === 'equipment'
+                                    ? 'translateZ(6px) translateY(-15px)' // Equipamentos vazando para cima
+                                    : 'translateZ(6px)'
                               }}
                             />
-                            {/* Divisor horizontal sutil */}
-                            <div className="w-8 md:w-10 lg:w-12 h-px bg-gradient-to-r from-transparent via-gray-400/30 to-transparent mb-1"></div>
-                            <span className="text-white text-[10px] md:text-xs font-medium text-center leading-none w-full px-1 whitespace-pre-line">
-                              {item.name}
-                            </span>
+                            {/* Divisor horizontal sutil - só para Windows */}
+                            {item.name === 'Windows\n(10 e 11)' && (
+                              <div className="w-8 md:w-10 lg:w-12 h-px bg-gradient-to-r from-transparent via-gray-400/30 to-transparent mb-1"></div>
+                            )}
+                            {/* Texto apenas para Windows, Mac sem texto */}
+                            {item.name === 'Windows\n(10 e 11)' && (
+                              <span className="text-white text-[10px] md:text-xs font-medium text-center leading-none w-full px-1 whitespace-pre-line">
+                                {item.name}
+                              </span>
+                            )}
+                            {/* Para outros sistemas (não Mac), mostrar nome normal */}
+                            {currentCategory.id !== 'systems' && (
+                              <>
+                                {/* Divisória sempre presente para outras categorias - CONTROLE VERTICAL */}
+                                <div className={`w-8 md:w-10 lg:w-12 h-px bg-gradient-to-r from-transparent via-gray-400/50 to-transparent relative z-20 ${
+                                  // Controle da divisória por categoria
+                                  currentCategory.id === 'genres' 
+                                    ? 'mb-2' // Gêneros: divisória mais próxima do texto
+                                    : currentCategory.id === 'equipment'
+                                      ? '-top-3 mb-1' // Equipamentos: divisória MUITO mais alta
+                                      : 'mb-1' // Outras: divisória normal (4px)
+                                  // Controle individual da divisória (exemplo)
+                                  // item.name === 'Forró/Arrocha' ? 'mb-3' : 'mb-2' // Só o Forró com divisória ainda mais alta
+                                }`}></div>
+                                {/* Texto com posição fixa para não vazar - CONTROLE DE TAMANHO E POSIÇÃO */}
+                                <span className={`text-white font-medium text-center leading-none w-full px-1 whitespace-pre-line ${
+                                  currentCategory.id === 'genres' 
+                                    ? 'text-[11px] md:text-[12px] absolute bottom-3 left-0 right-0' // Gêneros: letras MAIORES e mais ALTAS
+                                    : currentCategory.id === 'equipment'
+                                      ? 'text-[10px] md:text-xs relative -top-2' // Equipamentos: texto MUITO mais alto
+                                      : 'text-[10px] md:text-xs' // Outras: texto normal
+                                  // Controle individual do texto (exemplo)
+                                  // item.name === 'Pop/R&B' ? 'text-[13px] md:text-[14px] absolute bottom-3 left-0 right-0' : // Pop maior e mais alto
+                                }`}>
+                                  {item.name}
+                                </span>
+                              </>
+                            )}
                           </div>
                         ) : (
                           <span className="text-white text-[10px] md:text-xs font-medium text-center px-2 leading-tight truncate relative z-10">
