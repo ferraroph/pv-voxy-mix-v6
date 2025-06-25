@@ -51,18 +51,6 @@ const CompatibilitySection = () => {
       { name: 'Microfone\nDinâmico', logo: '/logos/mic/Microfone_Dinamico.png' },
       { name: 'Microfone\nCelular', logo: '/logos/mic/Celular.png', hasWarning: true }
     ]
-  }, {
-    id: 'environments',
-    title: 'TODOS OS AMBIENTES',
-    icon: Home,
-    items: [
-      { name: 'Sem Tratamento', logo: null },
-      { name: 'Home Studio', logo: null },
-      { name: 'Quarto', logo: null },
-      { name: 'Sala', logo: null },
-      { name: 'Carro', logo: null },
-      { name: 'Ao Vivo', logo: null }
-    ]
   }];
 
   useEffect(() => {
