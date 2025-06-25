@@ -528,3 +528,12 @@ _(Entradas serão adicionadas aqui conforme otimizações são implementadas)_
 - Esclarecimento claro sobre o uso do celular
 
 ---
+
+## COMPAT-ENVIRONMENTS-V21
+
+- **Categoria removida**: "Todos os Ambientes" eliminada completamente
+- **Categorias restantes**: DAWs, Sistemas, Gêneros, Equipamentos (4 categorias)
+- **Layout preservado**: Funcionalidade orbital mantida intacta
+- **Responsividade**: Todos os breakpoints funcionais
+
+---
