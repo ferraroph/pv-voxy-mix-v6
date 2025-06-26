@@ -20,7 +20,7 @@ const ComparisonSection = () => {
   };
 
   return (
-    <section id="comparison-section" className="py-20 bg-gradient-to-b from-voxy-dark to-voxy-dark-light relative overflow-hidden">
+    <section id="comparison-section" className="py-20 bg-gradient-to-b from-voxy-dark to-voxy-dark-light-smooth relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-20 right-1/4 w-80 h-80 bg-red-500/5 rounded-full blur-3xl animate-float"></div>

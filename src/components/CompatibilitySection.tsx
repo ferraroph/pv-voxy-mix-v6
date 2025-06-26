@@ -73,7 +73,7 @@ const CompatibilitySection = () => {
   };
   const currentCategory = categories[activeCategory];
   const Icon = currentCategory.icon;
-  return <section id="compatibility-section" className="py-20 bg-gradient-to-b from-voxy-dark-light to-voxy-dark relative overflow-hidden">
+  return <section id="compatibility-section" className="py-20 bg-gradient-to-b from-voxy-dark to-voxy-dark relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/3 w-96 h-96 bg-voxy-cyan/5 rounded-full blur-3xl animate-pulse"></div>
@@ -245,9 +245,9 @@ const CompatibilitySection = () => {
                           ${isAnimating ? 'scale-0 opacity-0' : 'scale-100 opacity-100'}
                         `} style={{
                           left: `calc(50% + ${x}px)`,
-                          top: `calc(50% + ${y + (isMobile ? 55 : 75)}px)`,
+                          top: `calc(55% + ${y + (isMobile ? 55 : 75)}px)`,
                           transform: 'translate(-50%, -50%)',
-                          width: isMobile ? '800px' : '100px',
+                          width: isMobile ? '800px' : '200px',
                           animationDelay: `${(index + 1) * 100}ms`
                         }}>
                           <span className="text-red-500"> Celular = GRAVAÇÃO</span>
@@ -262,8 +262,8 @@ const CompatibilitySection = () => {
           </div>
 
           {/* Category Counter - Melhor espaçamento */}
-          <div className="flex justify-center mt-8 md:mt-12">
-            <div className="flex gap-3 md:gap-2">
+          <div className="flex justify-center mt-16 md:mt-12">
+            <div className="flex gap-8 md:gap-2">
               {categories.map((_, index) => <button key={index} onClick={() => !isAnimating && setActiveCategory(index)} className={`w-4 h-4 md:w-3 md:h-3 rounded-full transition-all duration-300 touch-manipulation ${index === activeCategory ? 'bg-voxy-cyan scale-125' : 'bg-gray-600 hover:bg-gray-500 active:bg-gray-400'}`} />)}
             </div>
           </div>

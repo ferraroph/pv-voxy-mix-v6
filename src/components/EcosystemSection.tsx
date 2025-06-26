@@ -4,10 +4,9 @@ import { Settings, Cpu, Check } from 'lucide-react';
 const EcosystemSection = () => {
 
   return (
-    <section id="ecosystem-section" className="py-20 bg-gradient-to-b from-black/95 via-black to-black/95 relative overflow-hidden"
+    <section id="ecosystem-section" className="py-20 relative overflow-hidden"
              style={{ 
-               background: 'linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,1), rgba(0,0,0,0.95))',
-               transition: 'background 0.5s ease-in-out'
+               background: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, #0A0A0A 100%)'
              }}>
       {/* Background 3D Effects */}
       <div className="absolute inset-0">

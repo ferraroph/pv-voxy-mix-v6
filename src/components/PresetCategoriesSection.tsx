@@ -88,7 +88,7 @@ const PresetCategoriesSection = () => {
   const handleNext = () => {
     setActiveIndex(prev => (prev + 1) % categories.length);
   };
-  return <section className="py-12 md:py-20 bg-gradient-to-b from-voxy-dark-light to-voxy-dark relative overflow-hidden">
+  return <section className="py-12 md:py-20 bg-gradient-to-b from-voxy-dark-light-smooth to-voxy-dark relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/3 left-1/4 w-64 h-64 md:w-96 md:h-96 bg-voxy-cyan/3 rounded-full blur-3xl animate-pulse"></div>

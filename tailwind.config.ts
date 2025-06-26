@@ -57,6 +57,7 @@ export default {
         'voxy-cyan-light': '#00C8FF',
         'voxy-dark': '#0A0A0A',
         'voxy-dark-light': '#1A1A1A',
+        'voxy-dark-light-smooth': '#121212',
       },
       borderRadius: {
         lg: "var(--radius)",

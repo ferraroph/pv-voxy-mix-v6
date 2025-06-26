@@ -24,7 +24,7 @@ const FAQSection = () => {
   const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-  return <section id="faq-section" className="py-12 md:py-20 bg-gradient-to-b from-black to-voxy-dark relative overflow-hidden">
+  return <section id="faq-section" className="py-12 md:py-20 bg-gradient-to-b from-voxy-dark-light-smooth to-voxy-dark relative overflow-hidden">
       {/* Background Effects - Responsivos */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/4 w-48 h-48 md:w-80 md:h-80 bg-red-500/5 rounded-full blur-3xl animate-float"></div>

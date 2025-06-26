@@ -1,7 +1,7 @@
 import React from 'react';
 import VerticalCascadeCarousel from './VerticalCascadeCarousel';
 const DeliverySection = () => {
-  return <section id="delivery-section" className="py-20 bg-gradient-to-b from-voxy-dark to-voxy-dark-light relative overflow-hidden">
+  return <section id="delivery-section" className="py-20 bg-gradient-to-b from-voxy-dark to-voxy-dark-light-smooth relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-1/4 w-80 h-80 bg-voxy-cyan/5 rounded-full blur-3xl animate-float"></div>
