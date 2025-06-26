@@ -1,19 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import VerticalCascadeCarousel from './VerticalCascadeCarousel';
 const DeliverySection = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIsVisible(true);
-      }
-    }, {
-      threshold: 0.3
-    });
-    const section = document.getElementById('delivery-section');
-    if (section) observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
   return <section id="delivery-section" className="py-20 bg-gradient-to-b from-voxy-dark to-voxy-dark-light relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
@@ -24,7 +11,7 @@ const DeliverySection = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
             
             <h2 className="text-4xl md:text-5xl font-black text-white">
@@ -37,7 +24,7 @@ const DeliverySection = () => {
         </div>
 
         {/* Vertical Cascade Carousel */}
-        <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div>
           <VerticalCascadeCarousel />
         </div>
       </div>

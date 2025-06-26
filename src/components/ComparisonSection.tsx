@@ -1,27 +1,10 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { X, Check } from 'lucide-react';
 
 const ComparisonSection = () => {
   const [activeTab, setActiveTab] = useState<'comum' | 'dinamico'>('comum');
-  const [isVisible, setIsVisible] = useState(false);
   const [isFlipping, setIsFlipping] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    const section = document.getElementById('comparison-section');
-    if (section) observer.observe(section);
-
-    return () => observer.disconnect();
-  }, []);
 
   const handleTabChange = (tab: 'comum' | 'dinamico') => {
     if (tab === activeTab || isFlipping) return;
@@ -45,9 +28,7 @@ const ComparisonSection = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className={`text-center mb-16 transition-all duration-1000 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}>
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
             Por Que Funciona Tão Bem?
           </h2>

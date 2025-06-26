@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Gift } from 'lucide-react';
 const BonusSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
   const bonuses = [{
     id: 'waves-plugins',
     title: '200 Plugins WAVES',
@@ -27,18 +26,6 @@ const BonusSection = () => {
     icon: '👥',
     color: 'from-green-500 to-emerald-500'
   }];
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIsVisible(true);
-      }
-    }, {
-      threshold: 0.3
-    });
-    const section = document.getElementById('bonus-section');
-    if (section) observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
   return <section id="bonus-section" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-voxy-dark to-voxy-dark relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
@@ -49,7 +36,7 @@ const BonusSection = () => {
       </div>
 
       <div className="container mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
-        <div className={`text-center mb-10 sm:mb-12 lg:mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
           <div className="flex items-center justify-center gap-4 mb-4 sm:mb-6">
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white font-inter tracking-tight leading-tight">
               Bônus Exclusivos Inclusos
