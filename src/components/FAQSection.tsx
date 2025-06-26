@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
 const FAQSection = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-  const [isVisible, setIsVisible] = useState(false);
   const faqs = [{
     question: "Funciona no Mac?",
     answer: "Sim! O Voxy Mix é totalmente compatível com macOS. Funciona perfeitamente no Logic Pro, GarageBand e qualquer DAW que você use no Mac."
@@ -22,18 +21,6 @@ const FAQSection = () => {
     question: "Como é a entrega?",
     answer: "100% digital. Após a compra, você recebe acesso imediato à área de membros com todos os downloads, tutoriais e suporte completo."
   }];
-  useEffect(() => {
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIsVisible(true);
-      }
-    }, {
-      threshold: 0.3
-    });
-    const section = document.getElementById('faq-section');
-    if (section) observer.observe(section);
-    return () => observer.disconnect();
-  }, []);
   const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
@@ -47,7 +34,7 @@ const FAQSection = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className={`text-center mb-8 md:mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className="text-center mb-8 md:mb-16">
           <div className="flex items-center justify-center gap-4 mb-4 md:mb-6">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-black text-white font-inter tracking-tight px-2">
               Dúvidas Frequentes
@@ -57,7 +44,7 @@ const FAQSection = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="space-y-3 md:space-y-4">
-            {faqs.map((faq, index) => <div key={index} className={`transition-all duration-500 delay-${index * 100} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            {faqs.map((faq, index) => <div key={index} className="transition-all duration-300">
                 <div className="glass-effect rounded-xl md:rounded-2xl p-4 md:p-6 cursor-pointer hover:scale-[1.01] md:hover:scale-[1.02] transition-all duration-300 touch-manipulation" style={{
               background: 'rgba(30, 30, 30, 0.6)',
               backdropFilter: 'blur(16px)',
