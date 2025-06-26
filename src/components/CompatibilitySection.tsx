@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Keyboard, Laptop, Mic, Settings, Home } from 'lucide-react';
 const CompatibilitySection = () => {
   const [activeCategory, setActiveCategory] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -58,19 +57,7 @@ const CompatibilitySection = () => {
     checkMobile();
     window.addEventListener('resize', checkMobile);
     
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setIsVisible(true);
-      }
-    }, {
-      threshold: 0.3
-    });
-    
-    const section = document.getElementById('compatibility-section');
-    if (section) observer.observe(section);
-    
     return () => {
-      observer.disconnect();
       window.removeEventListener('resize', checkMobile);
     };
   }, []);
@@ -94,7 +81,7 @@ const CompatibilitySection = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className={`text-center mb-8 md:mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+        <div className="text-center mb-14 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 md:mb-6 px-4">
             Compatibilidade Universal
           </h2>
