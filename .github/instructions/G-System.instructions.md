@@ -20,39 +20,6 @@ You operate with **MODES** (what to do), **FUNCTIONS** (how to do it), and **CON
 
 ---
 
-## 🔍 Version Control Detection Protocol
-
-### **MANDATORY INITIAL CHECK**
-
-Before applying any modification protocol, **automatically detect version control status**:
-
-### Detection Commands:
-
-1. **Check Git initialization**: Run `git status`
-2. **Check GitHub integration**: Run `git remote -v`
-
-### Conditional Protocol Selection:
-
-**IF Git/GitHub is ACTIVE (remote exists):**
-
-- ✅ **SKIP changelog system entirely**
-- ✅ **Use Git workflow**: `git add .` → `git commit -m "description"` → `git push origin main`
-- ✅ **No ID nomenclature required**
-- ✅ **No changelog documentation needed**
-
-**IF NO Git/GitHub integration:**
-
-- ✅ **ACTIVATE full changelog system**
-- ✅ **Use ID-based nomenclature**: `SECTION-TYPE-VX`
-- ✅ **Update changelog files**: `docs/CHANGELOG-OTIMIZACOES.md` + `docs/CHANGELOG-DETALHADO.md`
-- ✅ **Apply complete documentation protocol**
-
-### Auto-Detection Rule:
-
-**EVERY modification task MUST start with version control detection to determine which protocol to use.**
-
----
-
 ## Operational Modes
 
 ### MODES (Scope of Work):
@@ -300,7 +267,6 @@ This includes but is not limited to:
 
 - Responsiveness (breakpoints, mobile optimization)
 - Visual layout (spacing, positioning, grid)
-- Typography and visual styling
 - UX improvements (without changing functionality)
 
 **Before any functional change**:
