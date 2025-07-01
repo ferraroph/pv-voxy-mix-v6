@@ -4,7 +4,7 @@ import { CheckCircle } from 'lucide-react';
 import CountdownTimer from './CountdownTimer';
 
 const OfferSection = () => {
-  const valueItems = ['50+ Presets Dinâmicos em 6 categorias', '200+ Plugins WAVES profissionais', 'Ferramenta StudioVerse completa', 'Atualizações Vitalícias', 'Grupo de Networking Exclusivo', 'Lives Exclusivas com o criador'];
+  const valueItems = ['50+ Presets Dinâmicos', 'Mais de 200 Plugins da WAVES', 'Tutoriais de instalação e uso', 'Atualizações Vitalícias', 'Grupo de Networking Exclusivo', 'AULAS BÔNUS: Como criar seus próprios presets e CALIBRAR usando IA'];
 
   return <section className="relative py-20 bg-voxy-dark overflow-hidden">
       {/* Background Atmosphere */}
@@ -85,11 +85,17 @@ const OfferSection = () => {
           }}>
               <div className="text-center">
                 <div className="text-4xl mb-3">🛡️</div>
-                <h3 className="text-xl font-bold text-yellow-400 mb-3">
-                  Garantia Incondicional
+                <h3 className="text-3xl font-bold text-yellow-400 mb-3">
+                  Garantia de 30 Dias
                 </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  7 dias para testar. Se não ficar satisfeito, devolvemos 100% do seu dinheiro.
+                <p className="text-sm font-bold text-amber-400 -mr-3 -ml-3 -mt-1 mb-3">
+                  Esse é o nível que a gente se garante...
+                </p>
+                <p className="text-gray-300 mt-8 text-sm leading-relaxed">
+                   A ferramenta está hospedada na Cakto, uma das plataformas mais fácil de pedir reembolso...
+                </p>
+                <p className="text-gray-300 mt-4 text-sm leading-relaxed">
+                   Se eu quisesse esconder uma ferramenta ruim eu colocaria em outras que<br></br>dificultam o reembolso 😉
                 </p>
               </div>
             </div>

@@ -17,15 +17,45 @@ const EcosystemSection = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6 font-inter tracking-tight">
-            O Ecossistema
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-6 font-inter tracking-tight" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 900,
+                    letterSpacing: 0.3,
+
+                  }}>
+            Afinal, o que é o
+
             <span className="block text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
-                  style={{ textShadow: '0 0 20px rgba(0, 162, 255, 0.5)' }}>
-              Voxy Mix
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 1000,
+                    letterSpacing: 0.3,
+
+                  }}>
+              Voxy Mix?
             </span>
           </h2>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto font-inter font-light">
-            São 'só' presets? É um plugin? O que é o Voxy Mix?
+          <p className="text-lg text-white/80 max-w-2xl mx-auto font-inter font-light" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 600,
+                    letterSpacing: 0.5,
+
+                  }}>
+            É um <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 800,
+                    letterSpacing: 0.3,
+
+                  }}>ECOSSISTEMA</span> que combina tecnologias <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 800,
+                    letterSpacing: 0.3,
+
+                  }}>REVOLUCIONÁRIAS:</span>
           </p>
         </div>
 
@@ -82,7 +112,25 @@ const EcosystemSection = () => {
 
               <h3 className="text-2xl font-bold text-white mb-4 font-inter tracking-tight">PRESETS DINÂMICOS</h3>
               <p className="text-white/80 mb-6 leading-relaxed font-inter font-light">
-                Configurações inteligentes que se adaptam em tempo real à sua voz, eliminando o som genérico e artificial.
+                <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 800,
+                    letterSpacing: 0.3,
+
+                  }}>ESQUEÇA</span> presets <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 800,
+                    letterSpacing: 0.3,
+
+                  }}>COMUMS</span>,<br/>Isso aqui é <span className="text-white" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 800,
+                    letterSpacing: 0.3,
+
+                  }}>OUTRO NÍVEL:</span>
               </p>
 
               {/* Checklist */}
@@ -92,7 +140,7 @@ const EcosystemSection = () => {
                        style={{ boxShadow: '0 0 10px rgba(0, 162, 255, 0.5)' }}>
                     <Check className="w-3 h-3 text-white" />
                   </div>
-                  <span className="text-white/80 text-sm font-inter">Knobs inteligentes que se ajustam automaticamente</span>
+                  <span className="text-white/80 text-sm font-inter">Se adapta a QUALQUER VOZ</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 bg-voxy-cyan rounded-full flex items-center justify-center"
@@ -106,7 +154,23 @@ const EcosystemSection = () => {
                        style={{ boxShadow: '0 0 10px rgba(0, 162, 255, 0.5)' }}>
                     <Check className="w-3 h-3 text-white" />
                   </div>
-                  <span className="text-white/80 text-sm font-inter">95% de taxa de sucesso comprovada</span>
+                  <span className="text-white/80 -mr-2 text-sm font-inter">Funciona em 
+                    <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text">
+                      <strong> QUALQUER PROGRAMA</strong>
+                    </span>
+                  </span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-5 h-5 bg-voxy-cyan rounded-full flex items-center justify-center"
+                       style={{ boxShadow: '0 0 10px rgba(0, 162, 255, 0.5)' }}>
+                    <Check className="w-3 h-3 text-white" />
+                  </div>
+                  <span className="text-white/80 -mr-2 text-sm font-inter">Funciona no 
+                    <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text">
+                      <strong> WINDOWS</strong></span> e no
+                      <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text">
+                      <strong> MAC</strong></span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -153,9 +217,21 @@ const EcosystemSection = () => {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-4 font-inter tracking-tight">GERENCIADOR DE PRESETS</h3>
+              <h3 className="text-xl font-bold text-white mb-4 font-inter tracking-tight">CENTRAL DE CONTROLE</h3>
               <p className="text-white/80 mb-6 leading-relaxed font-inter font-light">
-                Plataforma completa com mais de 200 plugins profissionais WAVES integrados em um só lugar.
+                  A tecnologia que da <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 800,
+                    letterSpacing: 0.3,
+
+                  }}>"VIDA"</span> aos presets e <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 800,
+                    letterSpacing: 0.3,
+
+                  }}>PRATICIDADE</span> pro usuário:
               </p>
 
               {/* Checklist */}
@@ -165,21 +241,36 @@ const EcosystemSection = () => {
                        style={{ boxShadow: '0 0 10px rgba(0, 162, 255, 0.5)' }}>
                     <Check className="w-3 h-3 text-white" />
                   </div>
-                  <span className="text-white/80 text-sm font-inter">Interface intuitiva e organizada</span>
+                  <span className="text-white/80 -mr-4 text-sm font-inter">Knobs/"Botões" que facilitam o uso</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 bg-voxy-cyan rounded-full flex items-center justify-center"
                        style={{ boxShadow: '0 0 10px rgba(0, 162, 255, 0.5)' }}>
                     <Check className="w-3 h-3 text-white" />
                   </div>
-                  <span className="text-white/80 text-sm font-inter">Gerenciamento avançado de categorias</span>
+                  <span className="text-white/80 text-sm font-inter">IA que acha os PRESETS IDEAIS</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 bg-voxy-cyan rounded-full flex items-center justify-center"
                        style={{ boxShadow: '0 0 10px rgba(0, 162, 255, 0.5)' }}>
                     <Check className="w-3 h-3 text-white" />
                   </div>
-                  <span className="text-white/80 text-sm font-inter">Backup automático das configurações</span>
+                  <span className="text-white/80 text-sm font-inter"> Ajuste inicial AUTOMÁTICO</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-5 h-5 bg-voxy-cyan rounded-full flex items-center justify-center"
+                       style={{ boxShadow: '0 0 10px rgba(0, 162, 255, 0.5)' }}>
+                    <Check className="w-3 h-3 text-white" />
+                  </div>
+                  <span className="text-white/80 text-sm -mr-6 font-inter">
+                  <span className="text-white" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 600,
+                    letterSpacing: 0.3,
+
+                  }}>Configurações AVANÇADAS:</span><br></br>Canais paralelos, sequência de plugins, calibragem dos "botões", etc
+                  </span>
                 </div>
               </div>
             </div>

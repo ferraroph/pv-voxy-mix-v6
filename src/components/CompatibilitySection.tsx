@@ -83,10 +83,15 @@ const CompatibilitySection = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-14 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 md:mb-6 px-4">
-            Compatibilidade Universal
+          <span className="block text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+
+                  }}>
+            Compatibilidade Universal</span>
           </h2>
-          <p className="text-voxy-cyan text-base md:text-lg mb-6 md:mb-8 px-4">
-            <span className="block md:hidden">Toque no centro para alternar</span>
+          <p className="text-white text-base md:text-lg mb-6 md:mb-8 px-4">
+            <span className="block md:hidden">Toque em "Todas as Daws" para alternar</span>
             <span className="hidden md:block">Clique no centro para alternar entre categorias</span>
           </p>
         </div>

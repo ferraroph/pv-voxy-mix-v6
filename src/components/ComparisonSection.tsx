@@ -73,26 +73,26 @@ const ComparisonSection = () => {
                       <X className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-red-400">
-                      Preset Comum (Estático)
+                      Preset Comum
                     </h3>
                   </div>
 
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
                       <span className="text-red-400">•</span>
-                      <span className="text-gray-300">Configuração fixa para 'voz genérica'</span>
+                      <span className="text-gray-300">Mixagem GENÉRICA, sem testes em outras vozes = Resultado artificial e DESCALIBRADO</span>
+                    </div>
+                    <div className="flex items-center gap-3 -mr-3">
+                      <span className="text-red-400">•</span>
+                      <span className="text-gray-300">Não se adapta a voz, ao ambiente gravado, nem ao microfone usado </span>
                     </div>
                     <div className="flex items-center gap-3">
                       <span className="text-red-400">•</span>
-                      <span className="text-gray-300">Não se adapta ao seu timbre</span>
+                      <span className="text-gray-300"> Difícil de mecher e quando não é EXAGERADO você não sente NENHUMA diferença</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <span className="text-red-400">•</span>
-                      <span className="text-gray-300">Resultado artificial e forçado</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <span className="text-red-400">•</span>
-                      <span className="text-gray-300">Funciona bem só em 20% dos casos</span>
+                      <span className="text-gray-300">Geralmente funciona só em PROGRAMAS ESPECÍFICOS</span>
                     </div>
                   </div>
                 </div>
@@ -103,26 +103,26 @@ const ComparisonSection = () => {
                       <Check className="w-6 h-6 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-voxy-cyan">
-                      Preset Dinâmico (Inteligente)
+                      Preset DINÂMICO
                     </h3>
                   </div>
 
                   <div className="space-y-4">
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-voxy-cyan rounded-full"></div>
-                      <span className="text-gray-300">Knobs inteligentes que se ajustam</span>
+                      <span className="text-gray-300">Mixagens TESTADAS e calibradas com mais de mil vozes diferentes</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-voxy-cyan rounded-full"></div>
-                      <span className="text-gray-300">Testado em 1.168 vozes diferentes</span>
+                      <span className="text-gray-300"> Se adaptam DE IMEDIATO a 95% dos casos, e os outros 5% você ajusta fácil com os "botões" (também testados)</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-voxy-cyan rounded-full"></div>
-                      <span className="text-gray-300">Resultado natural e profissional</span>
+                      <span className="text-gray-300">É isso que torna possível ter um Resultado PROFISSIONAL em MINUTOS, até pra quem NÃO SABE PRODUZIR</span>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="w-2 h-2 bg-voxy-cyan rounded-full"></div>
-                      <span className="text-gray-300">95% de taxa de sucesso comprovada</span>
+                      <span className="text-gray-300">Funciona em TODOS OS PROGRAMAS, todos os gêneros e é compatível com Windows e Mac</span>
                     </div>
                   </div>
                 </div>
