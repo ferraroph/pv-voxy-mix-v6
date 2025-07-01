@@ -26,7 +26,7 @@ const BonusSection = () => {
     icon: '👥',
     color: 'from-green-500 to-emerald-500'
   }];
-  return <section id="bonus-section" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-voxy-dark to-voxy-dark relative overflow-hidden">
+  return <section id="bonus-section" className="py-14 sm:py-16 lg:py-20 bg-gradient-to-b from-voxy-dark to-voxy-dark relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-1/4 w-80 h-80 bg-green-500/5 rounded-full blur-3xl animate-float"></div>

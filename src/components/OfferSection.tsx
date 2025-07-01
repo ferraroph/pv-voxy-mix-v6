@@ -6,7 +6,7 @@ import CountdownTimer from './CountdownTimer';
 const OfferSection = () => {
   const valueItems = ['50+ Presets Dinâmicos', 'Mais de 200 Plugins da WAVES', 'Tutoriais de instalação e uso', 'Atualizações Vitalícias', 'Grupo de Networking Exclusivo', 'AULAS BÔNUS: Como criar seus próprios presets e CALIBRAR usando IA'];
 
-  return <section id="oferta" className="relative py-20 bg-voxy-dark overflow-hidden">
+  return <section id="oferta" className="relative py-5 bg-voxy-dark overflow-hidden">
       {/* Background Atmosphere */}
       <div className="absolute inset-0">
         <div className="absolute bottom-1/4 left-1/4 w-[600px] h-[600px] bg-gradient-radial from-voxy-cyan/15 via-voxy-cyan/5 to-transparent rounded-full blur-3xl"></div>

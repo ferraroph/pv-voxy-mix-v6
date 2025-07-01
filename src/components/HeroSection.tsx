@@ -146,14 +146,14 @@ const HeroSection = () => {
         {/* CTA Button */}
         <div className={`transition-all duration-1000 delay-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <a href="#oferta">
-            <button className="group relative px-12 py-4 text-white text-lg font-bold uppercase tracking-wide rounded-full overflow-hidden transition-all duration-300 hover:scale-105">
+            <button className="group relative px-12 py-4 text-white text-lg font-bold uppercase tracking-wide rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105">
             <div className="absolute inset-0 bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-voxy-cyan/80 to-voxy-cyan-light/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div className="absolute inset-0 rounded-full" style={{
+            <div className="absolute inset-0 rounded-2xl" style={{
             boxShadow: '0 0 40px rgba(0, 255, 200, 0.6), 0 8px 25px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
           }}></div>
-            <div className="absolute inset-0 rounded-full border-2 border-white/20 animate-pulse"></div>
-            <div className="absolute inset-0 rounded-full bg-gradient-to-b from-transparent via-transparent to-black/10"></div>
+            <div className="absolute inset-0 rounded-2xl border-2 border-white/20 animate-pulse"></div>
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-transparent via-transparent to-black/10"></div>
             <span className="relative z-10 drop-shadow-sm">
               GARANTIR ACESSO VIP
             </span>
