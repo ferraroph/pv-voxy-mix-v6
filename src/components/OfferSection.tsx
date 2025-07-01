@@ -6,7 +6,7 @@ import CountdownTimer from './CountdownTimer';
 const OfferSection = () => {
   const valueItems = ['50+ Presets Dinâmicos', 'Mais de 200 Plugins da WAVES', 'Tutoriais de instalação e uso', 'Atualizações Vitalícias', 'Grupo de Networking Exclusivo', 'AULAS BÔNUS: Como criar seus próprios presets e CALIBRAR usando IA'];
 
-  return <section className="relative py-20 bg-voxy-dark overflow-hidden">
+  return <section id="oferta" className="relative py-20 bg-voxy-dark overflow-hidden">
       {/* Background Atmosphere */}
       <div className="absolute inset-0">
         <div className="absolute bottom-1/4 left-1/4 w-[600px] h-[600px] bg-gradient-radial from-voxy-cyan/15 via-voxy-cyan/5 to-transparent rounded-full blur-3xl"></div>
@@ -63,15 +63,17 @@ const OfferSection = () => {
               </div>
 
               {/* Premium CTA Button Final - Estética_Botões.png */}
-              <button className="w-full group relative px-8 py-4 bg-gradient-to-br from-voxy-cyan via-voxy-cyan-light to-voxy-cyan rounded-xl font-bold text-white text-xl transition-all duration-300 hover:-translate-y-1" style={{
-              boxShadow: 'inset 0 2px 4px rgba(255,255,255,0.1), inset 0 -2px 4px rgba(0,0,0,0.3), 0 0 20px rgba(0, 162, 255, 0.4)',
-              textShadow: '0 1px 2px rgba(0,0,0,0.5)'
-            }}>
-                <div className="absolute inset-0 bg-gradient-to-br from-voxy-cyan to-voxy-cyan-light rounded-xl blur opacity-50 group-hover:opacity-75 transition-opacity" style={{
-                filter: 'blur(8px)'
-              }}></div>
-                <span className="relative z-10 text-base px-0 mx-0">GARANTIR ACESSO VIP</span>
-              </button>
+              <a href="https://pay.cakto.com.br/h7hj2tg_364583" className="block w-full">
+                <button className="w-full group relative px-8 py-4 bg-gradient-to-br from-voxy-cyan via-voxy-cyan-light to-voxy-cyan rounded-xl font-bold text-white text-xl transition-all duration-300 hover:-translate-y-1" style={{
+                boxShadow: 'inset 0 2px 4px rgba(255,255,255,0.1), inset 0 -2px 4px rgba(0,0,0,0.3), 0 0 20px rgba(0, 162, 255, 0.4)',
+                textShadow: '0 1px 2px rgba(0,0,0,0.5)'
+              }}>
+                  <div className="absolute inset-0 bg-gradient-to-br from-voxy-cyan to-voxy-cyan-light rounded-xl blur opacity-50 group-hover:opacity-75 transition-opacity" style={{
+                  filter: 'blur(8px)'
+                }}></div>
+                  <span className="relative z-10 text-base px-0 mx-0">GARANTIR ACESSO VIP</span>
+                </button>
+              </a>
             </div>
 
             {/* Levitation Reflection Effect */}

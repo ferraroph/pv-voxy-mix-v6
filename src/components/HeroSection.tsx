@@ -145,7 +145,8 @@ const HeroSection = () => {
 
         {/* CTA Button */}
         <div className={`transition-all duration-1000 delay-500 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
-          <button className="group relative px-12 py-4 text-white text-lg font-bold uppercase tracking-wide rounded-full overflow-hidden transition-all duration-300 hover:scale-105">
+          <a href="#oferta">
+            <button className="group relative px-12 py-4 text-white text-lg font-bold uppercase tracking-wide rounded-full overflow-hidden transition-all duration-300 hover:scale-105">
             <div className="absolute inset-0 bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-voxy-cyan/80 to-voxy-cyan-light/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute inset-0 rounded-full" style={{
@@ -158,6 +159,7 @@ const HeroSection = () => {
             </span>
             <div className="absolute inset-0 -top-2 -bottom-2 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-pulse transition-all duration-500 skew-x-12"></div>
           </button>
+          </a>
         </div>
       </div>
 
