@@ -110,21 +110,31 @@ const EcosystemSection = () => {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-white mb-4 font-inter tracking-tight">PRESETS DINÂMICOS</h3>
-              <p className="text-white/80 mb-6 leading-relaxed font-inter font-light">
+              <h3 className="text-2xl font-bold text-white mb-4 font-inter tracking-tight">
+
+              {/* ========= TEXTO AQUI ========= */} {/* Presets Dinâmicos */}
+              
                 <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
                   style={{
                     textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
                     fontWeight: 800,
                     letterSpacing: 0.3,
 
-                  }}>ESQUEÇA</span> presets <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
+                  }}>PRESETS DINÂMICOS</span></h3>
+              <p className="text-white/80 mb-8 leading-relaxed font-inter font-light">
+                <span className="text-white" 
                   style={{
                     textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
                     fontWeight: 800,
                     letterSpacing: 0.3,
 
-                  }}>COMUMS</span>,<br/>Isso aqui é <span className="text-white" 
+                  }}>ESQUEÇA</span> presets <span className="text-white" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 800,
+                    letterSpacing: 0.3,
+
+                  }}>COMUMS</span>,<br></br>Isso aqui é <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
                   style={{
                     textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
                     fontWeight: 800,
@@ -133,7 +143,7 @@ const EcosystemSection = () => {
                   }}>OUTRO NÍVEL:</span>
               </p>
 
-              {/* Checklist */}
+              {/* ========= TEXTO AQUI ========= */} {/* Checklist */}
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 bg-voxy-cyan rounded-full flex items-center justify-center"
@@ -217,24 +227,40 @@ const EcosystemSection = () => {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-white mb-4 font-inter tracking-tight">CENTRAL DE CONTROLE</h3>
-              <p className="text-white/80 mb-6 leading-relaxed font-inter font-light">
-                  A tecnologia que da <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
+              <h3 className="text-xl font-bold text-white mb-4 font-inter tracking-tight">
+
+              {/* ========= TEXTO AQUI ========= */} {/* Central de Controle */}
+
+                <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
                   style={{
                     textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
                     fontWeight: 800,
                     letterSpacing: 0.3,
 
-                  }}>"VIDA"</span> aos presets e <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
+                  }}>CENTRAL DE CONTROLE</span></h3>
+              <p className="text-white/80 mb-8 leading-relaxed font-inter font-light">
+
+                  A tecnologia que da
+
+                  <span className="text-white" 
                   style={{
                     textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
                     fontWeight: 800,
                     letterSpacing: 0.3,
 
-                  }}>PRATICIDADE</span> pro usuário:
+                  }}> "VIDA"</span> aos presets e
+                  
+                  <span className="text-transparent bg-gradient-to-r from-voxy-cyan to-voxy-cyan-light bg-clip-text" 
+                  style={{
+                    textShadow: '0 0 20px rgba(0, 162, 255, 0.5)',
+                    fontWeight: 800,
+                    letterSpacing: 0.3,
+
+                  }}> PRATICIDADE</span> pro usuário:
               </p>
 
-              {/* Checklist */}
+              {/* ========= TEXTO AQUI ========= */} {/* Checklist */}
+              
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <div className="w-5 h-5 bg-voxy-cyan rounded-full flex items-center justify-center"
