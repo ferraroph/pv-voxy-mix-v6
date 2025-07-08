@@ -139,12 +139,12 @@ items: [
 
 // DEPOIS:
 items: [
-  { name: "Reaper", logo: "/logos/daws/Reaper_logo.png" },
-  { name: "FL Studio", logo: "/logos/daws/FLStudio_Logo.png" },
-  { name: "Logic Pro", logo: "/logos/daws/LogicPro_Logo.png" },
-  { name: "Pro Tools", logo: "/logos/daws/ProTools_Logo.png" },
-  { name: "Ableton", logo: "/logos/daws/Ableton_Logo.png" },
-  { name: "Studio One", logo: "/logos/daws/StudioOne_Logo.png" },
+  { name: "Reaper", logo: "/logos/daws/Reaper_logo.webp" },
+  { name: "FL Studio", logo: "/logos/daws/FLStudio_Logo.webp" },
+  { name: "Logic Pro", logo: "/logos/daws/LogicPro_Logo.webp" },
+  { name: "Pro Tools", logo: "/logos/daws/ProTools_Logo.webp" },
+  { name: "Ableton", logo: "/logos/daws/Ableton_Logo.webp" },
+  { name: "Studio One", logo: "/logos/daws/StudioOne_Logo.webp" },
 ];
 ```
 
@@ -189,12 +189,12 @@ boxShadow: item.logo
 
 ### Arquivos de Logo Utilizados
 
-- `Reaper_logo.png`
-- `FLStudio_Logo.png`
-- `LogicPro_Logo.png`
-- `ProTools_Logo.png`
-- `Ableton_Logo.png`
-- `StudioOne_Logo.png`
+- `Reaper_logo.webp`
+- `FLStudio_Logo.webp`
+- `LogicPro_Logo.webp`
+- `ProTools_Logo.webp`
+- `Ableton_Logo.webp`
+- `StudioOne_Logo.webp`
 
 ### Resultados
 
@@ -432,18 +432,18 @@ Otimização completa da categoria "systems" com implementação de logos dos si
 
 #### **Card Windows**
 
-- **Logo**: `/logos/systems/Windows_Logo.svg.png`
+- **Logo**: `/logos/systems/Windows_Logo.svg.webp`
 - **Texto**: `"Windows\n(10 e 11)"` (duas linhas)
 - **Layout**: Logo + divisor + texto em duas linhas
 
 #### **Cards macOS (todos)**
 
 - **Logos implementados**:
-  - `Mac_Catalina10.png`
-  - `Mac_BigSur11.png`
-  - `Mac_Monterey12.png`
-  - `Mac_Ventura13.png`
-  - `Mac_Sonoma14.png`
+  - `Mac_Catalina10.webp`
+  - `Mac_BigSur11.webp`
+  - `Mac_Monterey12.webp`
+  - `Mac_Ventura13.webp`
+  - `Mac_Sonoma14.webp`
 - **Texto uniforme**: `"Todas as versões"`
 - **Motivo**: Logos já contêm nome da versão
 
@@ -495,18 +495,18 @@ Aplicada a mesma estética usada na categoria DAWs:
 **Data**: 2024-12-19  
 **Arquivo**: `src/components/CompatibilitySection.tsx`  
 **Tipo**: Otimização Visual/UX  
-**Referência**: Substituição do ícone notebook por logo personalizado Windows_Mac.png
+**Referência**: Substituição do ícone notebook por logo personalizado Windows_Mac.webp
 
 ### 📋 **Resumo**
 
-Implementação de ícone personalizado no elemento central da categoria "systems", substituindo o ícone genérico de notebook pela imagem específica Windows_Mac.png.
+Implementação de ícone personalizado no elemento central da categoria "systems", substituindo o ícone genérico de notebook pela imagem específica Windows_Mac.webp.
 
 ### 🎨 **Mudanças Específicas**
 
 #### **Ícone Central Condicional**
 
 - **Implementado**: Condicional `currentCategory.id === 'systems'`
-- **Logo personalizado**: `/logos/systems/Windows_Mac.png`
+- **Logo personalizado**: `/logos/systems/Windows_Mac.webp`
 - **Fallback**: Mantido ícone original para outras categorias
 
 #### **Estilização da Imagem**
@@ -537,7 +537,7 @@ Implementação de ícone personalizado no elemento central da categoria "system
 
 ### ✅ **Validação**
 
-- [x] Logo Windows_Mac.png implementado no centro
+- [x] Logo Windows_Mac.webp implementado no centro
 - [x] Condicional funcionando apenas para categoria systems
 - [x] Outras categorias mantêm ícones originais
 - [x] Tamanhos responsivos ajustados
@@ -567,14 +567,14 @@ Conclusão da otimização dos nomes dos cards do Mac na CompatibilitySection. V
 
 ```tsx
 // ESTADO ATUAL (CORRETO):
-{ name: 'Catalina', logo: '/logos/systems/Mac_Catalina10.png' },
-{ name: 'Big Sur', logo: '/logos/systems/Mac_BigSur11.png' },
-{ name: 'Monterey', logo: '/logos/systems/Mac_Monterey12.png' },
-{ name: 'Ventura', logo: '/logos/systems/Mac_Ventura13.png' },
-{ name: 'Sonoma', logo: '/logos/systems/Mac_Sonoma14.png' }
+{ name: 'Catalina', logo: '/logos/systems/Mac_Catalina10.webp' },
+{ name: 'Big Sur', logo: '/logos/systems/Mac_BigSur11.webp' },
+{ name: 'Monterey', logo: '/logos/systems/Mac_Monterey12.webp' },
+{ name: 'Ventura', logo: '/logos/systems/Mac_Ventura13.webp' },
+{ name: 'Sonoma', logo: '/logos/systems/Mac_Sonoma14.webp' }
 
 // ANTERIORMENTE ERA:
-{ name: 'Todas as versões', logo: '/logos/systems/Mac_[versao].png' }
+{ name: 'Todas as versões', logo: '/logos/systems/Mac_[versao].webp' }
 ```
 
 ### Resultado Final
@@ -651,23 +651,23 @@ items: [
 ```tsx
 // DEPOIS:
 items: [
-  { name: "Rap/Trap e Funk", logo: "/logos/Genres/Rap_Trap.png" },
-  { name: "Pop/R&B", logo: "/logos/Genres/Pop_Rnb.png" },
-  { name: "Rock", logo: "/logos/Genres/Rock.png" },
-  { name: "E muito mais...", logo: "/logos/Genres/Todos.png" },
-  { name: "Arrocha/Forró", logo: "/logos/Genres/Forro_Arrocha.png" },
-  { name: "Sertanejo", logo: "/logos/Genres/Sertanejo.png" },
+  { name: "Rap/Trap e Funk", logo: "/logos/Genres/Rap_Trap.webp" },
+  { name: "Pop/R&B", logo: "/logos/Genres/Pop_Rnb.webp" },
+  { name: "Rock", logo: "/logos/Genres/Rock.webp" },
+  { name: "E muito mais...", logo: "/logos/Genres/Todos.webp" },
+  { name: "Arrocha/Forró", logo: "/logos/Genres/Forro_Arrocha.webp" },
+  { name: "Sertanejo", logo: "/logos/Genres/Sertanejo.webp" },
 ];
 ```
 
 ### Mudanças Específicas
 
-1. **"Rap/Trap"** → **"Rap/Trap e Funk"** + logo `Rap_Trap.png`
-2. **"Pop/R&B"** → mantido + logo `Pop_Rnb.png`
-3. **"Rock"** → mantido + logo `Rock.png`
-4. **"Funk"** → **"E muito mais..."** + logo `Todos.png`
-5. **"Forró"** → **"Arrocha/Forró"** + logo `Forro_Arrocha.png`
-6. **"Sertanejo"** → mantido + logo `Sertanejo.png`
+1. **"Rap/Trap"** → **"Rap/Trap e Funk"** + logo `Rap_Trap.webp`
+2. **"Pop/R&B"** → mantido + logo `Pop_Rnb.webp`
+3. **"Rock"** → mantido + logo `Rock.webp`
+4. **"Funk"** → **"E muito mais..."** + logo `Todos.webp`
+5. **"Forró"** → **"Arrocha/Forró"** + logo `Forro_Arrocha.webp`
+6. **"Sertanejo"** → mantido + logo `Sertanejo.webp`
 
 ### Resultados
 
@@ -713,10 +713,10 @@ items: [
 items: [
   {
     name: "Microfone Condensador",
-    logo: "/logos/mic/Microfone_Condensador.png",
+    logo: "/logos/mic/Microfone_Condensador.webp",
   },
-  { name: "Microfone Dinâmico", logo: "/logos/mic/Microfone_Dinamico.png" },
-  { name: "Microfone Celular", logo: "/logos/mic/Celular.png" },
+  { name: "Microfone Dinâmico", logo: "/logos/mic/Microfone_Dinamico.webp" },
+  { name: "Microfone Celular", logo: "/logos/mic/Celular.webp" },
 ];
 
 // + Mensagem especial condicional para "Microfone Celular":

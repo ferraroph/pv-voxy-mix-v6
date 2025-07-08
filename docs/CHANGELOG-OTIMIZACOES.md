@@ -340,7 +340,7 @@ _(Entradas serão adicionadas aqui conforme otimizações são implementadas)_
 
 - **Data**: 2024-12-19 | **Seção**: `CompatibilitySection`
 - **Escopo**: Visual, UX
-- **Resumo**: Substituição do ícone notebook por logo Windows_Mac.png no centro
+- **Resumo**: Substituição do ícone notebook por logo Windows_Mac.webp no centro
 - **Impacto**: Baixo | **Status**: ✅ Aplicado
 
 ## 🎯 **COMPATIBILITY-SYSTEMS-V1** - Otimização Categoria Sistemas

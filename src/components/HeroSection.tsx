@@ -128,7 +128,7 @@ const HeroSection = () => {
             animation: 'logoGlow 3s ease-in-out infinite alternate'
           }}>
           <img
-            src="/logos/logo-voxy-mix-transparente.png"
+            src="/logos/logo-voxy-mix-transparente.webp"
             alt="Voxy Mix Logo"
             className="w-4/5 h-4/5 object-contain"
             style={{

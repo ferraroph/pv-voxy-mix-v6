@@ -4,7 +4,7 @@ html:
 
 [
                             <div class="logo-placeholder">
-                                <img src="media\images\logo-voxy-mix-transparente.png" alt="Voxy Mix Logo">
+                                <img src="media\images\logo-voxy-mix-transparente.webp" alt="Voxy Mix Logo">
                             </div>
 ]
 
