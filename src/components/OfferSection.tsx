@@ -55,7 +55,7 @@ const OfferSection = () => {
             {/* Price */}
             <div className="text-center mb-8">
               <div className="text-5xl font-bold text-voxy-cyan mb-2">
-                R$ 97,90
+                R$ 47,90
               </div>
               <p className="text-gray-400">
                 Pagamento único • Sem mensalidades
@@ -63,7 +63,11 @@ const OfferSection = () => {
             </div>
 
             {/* Premium CTA Button Final - Estética_Botões.png */}
-            <a href="https://pay.cakto.com.br/h7hj2tg_364583" className="block w-full">
+
+            {/* 97,90 = https://pay.cakto.com.br/h7hj2tg_364583 */}
+            {/* 47,90 = https://pay.cakto.com.br/vghdj6q */}
+
+            <a href="https://pay.cakto.com.br/vghdj6q" className="block w-full">
               <button className="w-full group relative px-8 py-4 bg-gradient-to-br from-voxy-cyan via-voxy-cyan-light to-voxy-cyan rounded-xl font-bold text-white text-xl transition-all duration-300 hover:-translate-y-1" style={{
                 boxShadow: 'inset 0 2px 4px rgba(255,255,255,0.1), inset 0 -2px 4px rgba(0,0,0,0.3), 0 0 20px rgba(0, 162, 255, 0.4)',
                 textShadow: '0 1px 2px rgba(0,0,0,0.5)'

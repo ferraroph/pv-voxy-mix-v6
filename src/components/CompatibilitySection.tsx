@@ -91,7 +91,7 @@ const CompatibilitySection = () => {
             Compatibilidade Universal</span>
         </h2>
         <p className="text-white text-base md:text-lg mb-6 md:mb-8 px-4">
-          <span className="block md:hidden">Toque em "Todas as Daws" para alternar</span>
+          <span className="block md:hidden">Toque em "Todas as Daws" para ver mais</span>
           <span className="hidden md:block">Clique no centro para alternar entre categorias</span>
         </p>
       </div>
